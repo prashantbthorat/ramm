@@ -113,7 +113,11 @@ body .form-group {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
+.signup--wrapper .body--wrapper .section-left .ad--data{
+    width: 70%;
+} 
 .signup--wrapper .body--wrapper .section-left:after {
     content: "";
     position: absolute;
@@ -129,7 +133,7 @@ body .form-group {
  
  
 .signup--wrapper .body--wrapper .section-right{ 
-    padding: 16px;
+    padding: 16px 6%;
     position: fixed;
     right: 0;
     top:70px;
@@ -151,15 +155,30 @@ body .form-group {
     color: #fff;
 }
 .owl-carousel { 
-    width: 486px !important;
+    width: 70% !important;
 }
- .owl-item {
-    height: 208px;
-    width: 160px; 
+.owl-carousel .owl-item {
+    height: 300px;  
     display: flex;
     justify-content: center;
     align-items: center; font-size:70px; color:#fff;
 }
+.owl-carousel .owl-stage {
+    display: flex;
+    }
+.owl-carousel .owl-item img {
+    min-width: 100%;
+    min-height: 100%;
+}
+.owl-carousel .owl-item .item{ 
+    height: 300px;
+    width: 300px;
+}
+.owl-dots{
+    display: none;
+}
+ 
+ 
 .owl-next,
 .owl-prev{
     padding: 0;
@@ -197,9 +216,7 @@ body .form-group {
     text-decoration: underline !important;
     cursor: pointer;
 }
-.forgot--note{
-    
-}
+ 
 .forgot--note p{
     color: rgba(48,65,86,.54);
     font-size: 15px;
@@ -242,6 +259,19 @@ body .form-group {
     .signup--wrapper .owl-carousel {
         width: 185px !important;
     }
+    .owl-carousel .owl-item .item {
+        height: 260px;
+    }
+    .signup--wrapper .body--wrapper .section-left .ad--data {
+        width: 99%;
+        text-align: center;
+    }
+    .signup--wrapper .body--wrapper .section-left .ad--data h1{
+        font-size: 20px;
+    }
+    .signup--wrapper .body--wrapper .section-left .ad--data p{
+        font-size: 15px;
+    }
 }
 @media only screen and (min-width: 600px) and (max-width: 979px){
     .signup--wrapper .body--wrapper .section-left{
@@ -258,8 +288,26 @@ body .form-group {
     .signup--wrapper .owl-carousel {
         width: 183px !important;
     }
+    .owl-carousel .owl-item .item {
+        height: 150px;
+    }
+    .owl-carousel .owl-item{
+        height: 210px;
+    }
+    .signup--wrapper .body--wrapper .section-left .ad--data {
+        width: 81%;
+    }
+    .signup--wrapper .body--wrapper .section-left .ad--data h1{
+        font-size: 25px;
+    }
 }
-@media only screen and (min-width: 980px) and (max-width: 1279px){}
-@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+    .owl-carousel .owl-item .item {
+        height: 255px; 
+    }
+}
 @media only screen and (min-width: 1441px) and (max-width: 1550px){}
 @media screen and (orientation:landscape) and (max-width: 850px){}
