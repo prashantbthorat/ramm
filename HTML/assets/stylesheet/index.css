@@ -75,6 +75,7 @@ body .form-group {
  
 .signup--wrapper .cust--header{
     box-shadow: 0 0 5px #ddd;
+    z-index: 9;
 }
 .signup--wrapper .cust--header .navbar-brand{
     width: 115px;
