@@ -36,6 +36,7 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     height: 45px !important;
+    border-left: none;
 }
 .body--wrapper .input-group-addon{
     background-color: #f15c5b;
@@ -207,7 +208,16 @@
     color: rgba(48,65,86,.54);
     font-size: 15px;
 }
- 
+.body--wrapper .otp--send{
+    margin: 7px 0 0 0;
+    font-size: 13px;
+    color: #9e9d9d;
+}
+.body--wrapper .otp--section{
+    padding: 20px;
+    margin: 15px 0 0 0;
+    box-shadow: 0 0 5px #ddd;
+}
 
 @media only screen and (max-width: 599px) {
     .body--wrapper{
