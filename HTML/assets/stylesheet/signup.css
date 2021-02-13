@@ -193,10 +193,10 @@
 .owl-prev:focus{
     outline: none;
 }
-.remember--me{
+.body--wrapper .remember--me{
     justify-content: space-between;
 }
-.remember--me a{
+.body--wrapper .remember--me a{
     font-size: 14px;
     color: #f15c5b !important;
     font-weight: 400;
@@ -204,7 +204,7 @@
     cursor: pointer;
 }
  
-.forgot--note p{
+.body--wrapper .forgot--note p{
     color: rgba(48,65,86,.54);
     font-size: 15px;
 }
@@ -217,6 +217,12 @@
     padding: 20px;
     margin: 15px 0 0 0;
     box-shadow: 0 0 5px #ddd;
+}
+.body--wrapper a{
+    color: #000;
+}
+.body--wrapper a:focus{
+    outline: none;
 }
 
 @media only screen and (max-width: 599px) {
