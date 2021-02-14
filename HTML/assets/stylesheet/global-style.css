@@ -107,54 +107,22 @@
     -ms-flex-item-align: stretch !important;
     align-self: stretch !important;
 }
-.m-0{
-    margin: 0 !important;
-}
-.mt-0,.my-0 {
-  margin-top: 0 !important;
-}
-.mr-0,.mx-0 {
-  margin-right: 0 !important;
-}
-.mb-0,.my-0 {
-  margin-bottom: 0 !important;
-}
-.ml-0,.mx-0 {
-  margin-left: 0 !important;
-}
-.p-0 {
-    padding: 0 !important;
-}  
-.pt-0, .py-0 {
-    padding-top: 0 !important;
-}
-.pr-0, .px-0 {
-    padding-right: 0 !important;
-}
-.pb-0, .py-0 {
-    padding-bottom: 0 !important;
-}
-.pl-0, .px-0 {
-    padding-left: 0 !important;
-}
-.m-auto {
-    margin: auto !important;
-}  
-.mt-auto, .my-auto {
-    margin-top: auto !important;
-}
-.mr-auto, .mx-auto {
-    margin-right: auto !important;
-}
-.mb-auto, .my-auto {
-    margin-bottom: auto !important;
-}
-.ml-auto, .mx-auto {
-    margin-left: auto !important;
-}
-.w-100 {
-    width: 100% !important;
-}
+.m-0{ margin: 0 !important}
+.mt-0,.my-0 {margin-top: 0 !important}
+.mr-0,.mx-0 {margin-right: 0 !important}
+.mb-0,.my-0 {margin-bottom: 0 !important}
+.ml-0,.mx-0 {margin-left: 0 !important}
+.p-0 {padding: 0 !important}  
+.pt-0, .py-0 { padding-top: 0 !important}
+.pr-0, .px-0 {padding-right: 0 !important}
+.pb-0, .py-0 { padding-bottom: 0 !important}
+.pl-0, .px-0 {padding-left: 0 !important}
+.m-auto {margin: auto !important}  
+.mt-auto, .my-auto { margin-top: auto !important}
+.mr-auto, .mx-auto {margin-right: auto !important}
+.mb-auto, .my-auto {margin-bottom: auto !important}
+.ml-auto, .mx-auto {margin-left: auto !important}
+.w-100 {width: 100% !important;}
 
 .mt-5{margin-top: 5px !important;}
 .mt-10{margin-top: 10px !important;}
@@ -173,3 +141,87 @@
 .mb-10{margin-bottom: 10px !important;}
 .mb-15{margin-bottom: 15px !important;}
 .mb-20{margin-bottom: 20px !important;}
+
+.position-relative{position: relative !important}
+
+.bg--primary{
+    background: linear-gradient(87deg, #f15c5b 0, #f49a80 100%) !important;
+}
+.bg-transparent{
+    background: transparent;
+}
+
+.dashboard--wrapper .dropdown-menu{  
+    animation: show-navbar-dropdown .25s ease forwards; 
+}
+@keyframes show-navbar-dropdown
+{
+    0%
+    {
+        transition: visibility .25s, opacity .25s, transform .25s; 
+        transform: translate(0, 10px) perspective(200px) rotateX(-2deg);
+
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translate(0, 0);
+
+        opacity: 1;
+    }
+}
+.dashboard--wrapper .dropdown-menu .dropdown-item{
+    padding: 5px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+.dashboard--wrapper .dropdown-menu .dropdown-item .fa{
+    margin-right: 15px;
+}
+.btn-secondary{
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+.btn-secondary:focus,
+.btn-secondary:hover{
+    color: #fff;
+}
+.close,
+.btn{
+    outline: none !important;
+}
+
+
+/*----------- Modal styling (start here) -------------*/
+.dashboard--wrapper .modal-header{
+    background: linear-gradient( 87deg , #f15c5b 0, #f49a80 100%) !important;
+    color: #fff;
+}
+ .modal--header .close{
+    display: flex;
+    line-height: 21px;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: -9px;
+    top: -11px;
+    opacity: unset;
+    background: #fff;
+    font-size: 22px;
+}
+.btn--primary{
+    background: linear-gradient(87deg, #f15c5b 0, #f49a80 100%) !important;
+    border-color: #f2615e;
+}
+ .modal--header{
+    background: linear-gradient(87deg, #f15c5b 0, #f49a80 100%) !important;
+    color: #fff;
+}
+/*----------- Modal styling (end here) -------------*/
