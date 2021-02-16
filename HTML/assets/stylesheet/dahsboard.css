@@ -162,12 +162,14 @@ body{
     font-size: 18px;
     color: #fff;
 }
-.dashboard--wrapper .main-content .content--middle--wrap{
-    background-color: #172b4d !important;
+.dashboard--wrapper .main-content .content--middle--wrap{ 
     margin-top: -110px;
     border-radius: 10px;
     box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%); 
 } 
+.dashboard--wrapper .main-content .table-responsive tbody tr{
+    background-color: #283447;
+}
 .dashboard--wrapper .main-content .table-responsive tbody tr td   {
     color: #fff; 
     font-size: 14px;
@@ -193,11 +195,11 @@ body{
     text-decoration: none !important;
     color: #000 !important;
 }
-.dashboard--wrapper .main-content .dropdown-menu{   
+/* .dashboard--wrapper .main-content .dropdown-menu{   
     left: unset !important; 
     right: 0px;
     border: none;
-}
+} */
 
 .dashboard--wrapper .agreement--process--table .table tbody tr td .dropdown-menu.show{
     top: 36px !important; 
@@ -207,12 +209,12 @@ body{
     color: #d1baba
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(1),
-.dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(1){
-    width: 23%;
+.dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(1){    
+   text-align: center;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(2),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(2){
-    width: 15%;
+    width: 22%;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(3),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(3){
@@ -220,11 +222,11 @@ body{
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(4),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(4){
-    width: 15%;
+    width: 21%;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(5),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(5){
-    width: 15%;
+    width: 18%;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(6),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(6){
@@ -236,8 +238,34 @@ body{
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(8),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(8){
-    width: 80px;
-    text-align: right;
+    width: 8%; 
+}
+.dashboard--wrapper .dataTables_wrapper .dataTables_length select{
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+}
+.dashboard--wrapper .dataTables_wrapper .dataTables_filter label,
+.dashboard--wrapper .dataTables_wrapper .dataTables_length label{
+    font-weight: 500;
+}
+.dashboard--wrapper .dataTables_wrapper .dataTables_filter input {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #fff;
+    margin-left: 10px;
+    outline: none;
+    width: 275px;
+}
+.dashboard--wrapper .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dashboard--wrapper .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: #fff !important;
+    border: 1px solid #f28272;
+    border-radius: 50%;
+    background: linear-gradient( 87deg , #f15c5b 0, #f49a80 100%) !important;
 }
 
 
