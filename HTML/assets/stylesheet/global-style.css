@@ -143,6 +143,7 @@
 .mb-20{margin-bottom: 20px !important;}
 
 .position-relative{position: relative !important}
+.border-none, .border-0{border: none !important;}
 
 .bg--primary{
     background: linear-gradient(87deg, #f15c5b 0, #f49a80 100%) !important;

@@ -128,7 +128,7 @@
             <div id="mainSidenav" class="sidenav">
                 <ul class="p-0 m-0">
                     <li>
-                        <a>
+                        <a data-toggle="modal" data-target="#digitalRentingServices">
                             <i class="fa fa-hourglass-start" aria-hidden="true"></i>
                             <span>Start Digital Renting Services</span>
                         </a>
@@ -200,12 +200,13 @@
                 </ul>
             </div>
 
+            <button type="button" class="btn collapse--btn" id="sidebar-btn">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
 
             <!-- Right body sec -->
             <div id="main-content" class="main-content">
-                <button type="button" class="btn collapse--btn" id="sidebar-btn">
-                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                </button>
+                
 
                 <div class="container-fluid">
                     <div class="row">
@@ -228,7 +229,7 @@
                         <div class="col-lg-12">
                             <div class="content--middle--wrap">
                                 <div class="table-responsive agreement--process--table">
-                                    <table class="table " id="table_id" class="display">
+                                    <table class="table border-0 " id="table_id" class="display">
                                         <thead>
                                             <tr>
                                                 <th>ACTIONS</th>
@@ -289,7 +290,7 @@
                                                 <td>Whole Agreement without Digital Renting appointment</td>
                                                 <td>Book/View Appointment</td>
                                                 <td><a>Agreement Preparation</a></td>
-                                                <td><a data-toggle="modal" data-target="#myModal"> Add </a> / <a> Show
+                                                <td><a> Add </a> / <a> Show
                                                     </a></td>
 
                                             </tr>
@@ -341,7 +342,7 @@
                                                 <td>Whole Agreement without Digital Renting appointment</td>
                                                 <td>Book/View Appointment</td>
                                                 <td><a>Agreement Preparation</a></td>
-                                                <td><a data-toggle="modal" data-target="#myModal"> Add </a> / <a> Show
+                                                <td><a data-toggle="modal" data-target="#digitalRentingServices"> Add </a> / <a> Show
                                                     </a></td>
 
                                             </tr>
@@ -392,7 +393,7 @@
                                                 <td>Whole Agreement without Digital Renting appointment</td>
                                                 <td>Book/View Appointment</td>
                                                 <td><a>Agreement Preparation</a></td>
-                                                <td><a data-toggle="modal" data-target="#myModal"> Add </a> / <a> Show
+                                                <td><a data-toggle="modal" data-target="#digitalRentingServices"> Add </a> / <a> Show
                                                     </a></td>
 
                                             </tr>
@@ -408,20 +409,21 @@
     </section>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="digitalRentingServices" tabindex="-1" role="dialog" aria-labelledby="digitalRentingServicesLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header modal--header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <h4 class="modal-title" id="digitalRentingServicesLabel">Digital Renting Services</h4>
                 </div>
                 <div class="modal-body">
                     ...
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary btn--primary">Save changes</button>
+                    <button type="button" class="btn btn-primary btn--primary">Pay now</button>
+                    <button type="button" class="btn btn-primary btn--primary">Add to Cart</button>
                 </div>
             </div>
         </div>
