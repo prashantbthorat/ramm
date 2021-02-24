@@ -65,13 +65,13 @@
 .body--wrapper .form-group {
     margin-bottom: 20px;
 }
-.body--wrapper .custom-checkbox .form-check-input {
+.custom-checkbox .form-check-input {
     position: absolute;
     margin-top: 5px;
     margin-left: 0;
     cursor: pointer;
 }
-.body--wrapper .custom-checkbox .form-check-label{
+.custom-checkbox .form-check-label{
     margin-left: 20px;
     cursor: pointer;
 }

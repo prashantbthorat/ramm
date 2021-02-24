@@ -218,7 +218,7 @@
     font-size: 22px;
 }
 .btn--primary{
-    background: linear-gradient(87deg, #f15c5b 0, #f49a80 100%) !important;
+    background: #f15d5b !important;
     border-color: #f2615e;
 }
  .modal--header{
