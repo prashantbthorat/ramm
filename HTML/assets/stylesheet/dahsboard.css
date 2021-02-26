@@ -330,11 +330,63 @@ body{
     font-size: 15px;
     height: 45px;
 }
-#govChargesModal{
-    left: 600px;
-    opacity: 0;
+#govChargesModal{ 
     display: none;
 }
+.modal--body--wrapper{
+    overflow: hidden;
+}
+.modal--body--wrapper .back--btn .fa {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.gov--charges--details--wrapper{
+    margin: 15px 20px;
+}
+ 
+.gov--charges--details--wrapper .form-group{
+    margin-bottom: 20px;
+}
+.gov--charges--details--wrapper .header{
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px; 
+}
+.gov--charges--details--wrapper .input-group-addon{ 
+    border: 1px solid #c1c1c1; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 6px 14px;
+}
+.gov--charges--details--wrapper .input-group{ 
+    border-radius: 15px;
+    height: 38px;
+}
+.gov--charges--details--wrapper .form-control{
+    font-size: 15px;
+    border: 1px solid #c1c1c1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 38px !important;
+    border-left: none;
+}
+.gov--charges--details--wrapper .form-control:focus{
+    outline: none;
+    box-shadow: 0 0 5px #ddd;
+}
+.gov--charges--details--wrapper .calculate--btn{
+    width: 50%;
+    border-radius: 20px;
+}
+
+.gov--charges--details--wrapper .varying--rent--sec .rent--calculation .table{
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 6px;
+}
+.gov--charges--details--wrapper .varying--rent--sec .rent--calculation .table tbody tr:first-child th{
+    border-top: none;
+}
+
 /*------------------ Digital Renting Services Modal (End here) ------------------*/
 
 
