@@ -214,31 +214,63 @@ body{
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(2),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(2){
-    width: 22%;
+    width: 10% !important;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(3),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(3){
-    width: 15%;
+    width: 15% !important;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(4),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(4){
-    width: 21%;
+    width: 18% !important;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(5),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(5){
-    width: 18%;
+    width: 27% !important;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(6),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(6){
-    width: 10%;
+    width: 16% !important;
+    position: relative;
 }
 .dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(7),
 .dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(7){
-    width: 7%;
+    width: 8% !important;
 }
-.dashboard--wrapper .agreement--process--table .table tbody tr td:nth-child(8),
-.dashboard--wrapper .agreement--process--table .table thead tr th:nth-child(8){
-    width: 8%; 
+ 
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details{
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .table--header{
+    display: flex;
+}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .table--body{
+    display: flex;
+    flex-direction: column;
+    min-height: 0px;
+    max-height: 100px;
+    overflow: auto;
+}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td{
+    font-size: 13px;
+    padding: 9px;
+    border-top: 1px solid #ddd;
+}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.one{width: 40%;}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.two{width: 30%;}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.three{width: 30%;}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .table--header.collapsed .td.three .fa{   
+    transform: rotate( 0deg );
+}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .table--header .td.three .fa{
+    transform: rotate( 183deg );
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    color: #f15d5c;
+    cursor: pointer;
 }
 .dashboard--wrapper .dataTables_wrapper .dataTables_length select{
     background-color: #fff;

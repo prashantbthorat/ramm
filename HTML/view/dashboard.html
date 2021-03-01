@@ -13,11 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
     <title>Dashboard </title>
-
-
-
-
-
+ 
 </head>
 
 <body>
@@ -232,13 +228,12 @@
                                     <table class="table border-0 " id="table_id" class="display">
                                         <thead>
                                             <tr>
-                                                <th>ACTIONS</th>
-                                                <th>REQUEST NO / TOKEN NO / PASSWORD</th>
+                                                <th>MORE ACTIONS</th>
+                                                <th>REQUEST NO / TOKEN NO </th>
                                                 <th>PROPERTY ADDRESS</th>
                                                 <th>SERVICES INITIATED</th>
-                                                <th>PARTY DETAILS</th>
-                                                <th>APPOINTMENT</th>
-                                                <th>STATUS</th>
+                                                <th>PARTY DETAILS</th> 
+                                                <th>ACTION</th>
                                                 <th>COMMENTS</th>
                                             </tr>
                                         </thead>
@@ -280,125 +275,237 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-1">1897(ASP_005_1897)</p>
-                                                    <a>14523641523645</a>
-                                                    <p class="mb-1 mt-2">Pass@123</p>
-                                                    <a>View Details</a>
+                                                    <p title="Click for More Document Details" ><a class="mb-1 cursor-pointer">1897(ASP_1897)</a></p>
+                                                    <a class=" cursor-pointer">14523641523645</a>  
                                                 </td>
                                                 <td>PROPERTY ADDRESS</td>
                                                 <td>Whole Agreement without Digital Renting appointment</td>
+                                                <td>  
+                                                    <div class="party--details">
+                                                        <div class="table--header cursor-pointer collapsed" data-toggle="collapse" data-target="#demo">
+                                                            <div class="td one border-0">Name</div>
+                                                            <div class="td two border-0">Appointment</div>
+                                                            <div class="td three border-0">Biometric
+                                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div id="demo" class="collapse">
+                                                        <div class="table--body">
+                                                            <div class="rows d-flex">
+                                                                <div class="td one">
+                                                                    <p class="mb-0 fw-500">Shantanu Joshi (A)</p>
+                                                                    <p class="mb-0">8446994921</p>
+                                                                </div>
+                                                                <div class="td two">12/12/2021</div>
+                                                                <div class="td three">Yet to Schedule</div>
+                                                            </div>
+                                                            <div class="rows d-flex">
+                                                                <div class="td one">
+                                                                    <p class="mb-0 fw-500">Prashant Thorat (T)</p>
+                                                                    <p class="mb-0">7709992400</p>
+                                                                </div>
+                                                                <div class="td two">12/12/2021</div>
+                                                                <div class="td three">Yet to Schedule</div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </td> 
+                                                <td>
+                                                   <div class="d-flex flex-direction-column">
+             
+                                                    <a title="Update Status" class="cursor-pointer mb-5">Agreement Preparation</a>
+                                                    <a title="Biometric Appointment Status" class="cursor-pointer mb-5">Book/ View Appointment</a>
+                                                    <a title="Verify your Appointment Details" class="cursor-pointer">Confirm Appointment Details </a>
+                                                   </div>
+                                                </td>
+                                                <td><a> Add </a> / <a> Show
+                                                    </a></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary " type="button"
+                                                            id="dropdownMenuButton" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <li> <a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-file-word-o"
+                                                                        aria-hidden="true"></i>Update Draft</a></li>
+                                                            <li><a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-external-link"
+                                                                        aria-hidden="true"></i>Send link to owner</a>
+                                                            </li>
+                                                            <li> <a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-external-link"
+                                                                        aria-hidden="true"></i>Send link to tenant</a>
+                                                            </li>
+                                                            <li> <a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-id-card-o"
+                                                                        aria-hidden="true"></i>Agreement details</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-thumbs-up"
+                                                                        aria-hidden="true"></i>Change biometric
+                                                                    responsibility</a></li>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p title="Click for More Document Details" ><a class="mb-1 cursor-pointer">1897(ASP_1897)</a></p>
+                                                    <a class=" cursor-pointer">14523641523645</a>  
+                                                </td>
+                                                <td>PROPERTY ADDRESS</td>
                                                 <td>Whole Agreement without Digital Renting appointment</td>
-                                                <td>Book/View Appointment</td>
-                                                <td><a>Agreement Preparation</a></td>
+                                                <td>  
+                                                    <div class="party--details">
+                                                        <div class="table--header cursor-pointer collapsed" data-toggle="collapse" data-target="#demo2">
+                                                            <div class="td one border-0">Name</div>
+                                                            <div class="td two border-0">Appointment</div>
+                                                            <div class="td three border-0">Biometric
+                                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div id="demo2" class="collapse">
+                                                        <div class="table--body">
+                                                            <div class="rows d-flex">
+                                                                <div class="td one">
+                                                                    <p class="mb-0 fw-500">Shantanu Joshi (A)</p>
+                                                                    <p class="mb-0">8446994921</p>
+                                                                </div>
+                                                                <div class="td two">12/12/2021</div>
+                                                                <div class="td three">Yet to Schedule</div>
+                                                            </div>
+                                                            <div class="rows d-flex">
+                                                                <div class="td one">
+                                                                    <p class="mb-0 fw-500">Prashant Thorat (T)</p>
+                                                                    <p class="mb-0">7709992400</p>
+                                                                </div>
+                                                                <div class="td two">12/12/2021</div>
+                                                                <div class="td three">Yet to Schedule</div>
+                                                            </div>
+                                                            <div class="rows d-flex">
+                                                                <div class="td one">
+                                                                    <p class="mb-0 fw-500">Subodh Deshpande (A)</p>
+                                                                    <p class="mb-0">9850504545</p>
+                                                                </div>
+                                                                <div class="td two">12/12/2021</div>
+                                                                <div class="td three">Yet to Schedule</div>
+                                                            </div>
+                                                            <div class="rows d-flex">
+                                                                <div class="td one">
+                                                                    <p class="mb-0 fw-500">Rohit Talwalkar</p>
+                                                                    <p class="mb-0">9822010101</p>
+                                                                </div>
+                                                                <div class="td two">12/12/2021</div>
+                                                                <div class="td three">Yet to Schedule</div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </td> 
+                                                <td>
+                                                   <div class="d-flex flex-direction-column">
+             
+                                                    <a title="Update Status" class="cursor-pointer mb-5">Agreement Preparation</a>
+                                                    <a title="Biometric Appointment Status" class="cursor-pointer mb-5">Book/ View Appointment</a>
+                                                    <a title="Verify your Appointment Details" class="cursor-pointer">Confirm Appointment Details </a>
+                                                   </div>
+                                                </td>
+                                                <td><a> Add </a> / <a> Show
+                                                    </a></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary " type="button"
+                                                            id="dropdownMenuButton" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <li> <a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-file-word-o"
+                                                                        aria-hidden="true"></i>Update Draft</a></li>
+                                                            <li><a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-external-link"
+                                                                        aria-hidden="true"></i>Send link to owner</a>
+                                                            </li>
+                                                            <li> <a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-external-link"
+                                                                        aria-hidden="true"></i>Send link to tenant</a>
+                                                            </li>
+                                                            <li> <a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-id-card-o"
+                                                                        aria-hidden="true"></i>Agreement details</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item d-flex align-items-center"
+                                                                    href="#">
+                                                                    <i class="fa fa-thumbs-up"
+                                                                        aria-hidden="true"></i>Change biometric
+                                                                    responsibility</a></li>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p title="Click for More Document Details" ><a class="mb-1 cursor-pointer">1897(ASP_1897)</a></p>
+                                                    <a class=" cursor-pointer">14523641523645</a>  
+                                                </td>
+                                                <td>PROPERTY ADDRESS</td>
+                                                <td>Whole Agreement without Digital Renting appointment</td>
+                                                <td>  
+                                                    <div class="party--details">
+                                                        <div class="table--header cursor-pointer collapsed" data-toggle="collapse" data-target="#demo3">
+                                                            <div class="td one border-0">Name</div>
+                                                            <div class="td two border-0">Appointment</div>
+                                                            <div class="td three border-0">Biometric
+                                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div id="demo3" class="collapse">
+                                                        <div class="table--body">
+                                                            <div class="rows d-flex">
+                                                                <div class="td one">
+                                                                    <p class="mb-0 fw-500">Vinayak Pathak (A)</p>
+                                                                    <p class="mb-0">9879465895</p>
+                                                                </div>
+                                                                <div class="td two">12/12/2021</div>
+                                                                <div class="td three">Yet to Schedule</div>
+                                                            </div> 
+                                                        </div> 
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </td> 
+                                                <td>
+                                                   <div class="d-flex flex-direction-column">
+             
+                                                    <a title="Update Status" class="cursor-pointer mb-5">Agreement Preparation</a>
+                                                    <a title="Biometric Appointment Status" class="cursor-pointer mb-5">Book/ View Appointment</a>
+                                                    <a title="Verify your Appointment Details" class="cursor-pointer">Confirm Appointment Details </a>
+                                                   </div>
+                                                </td>
                                                 <td><a> Add </a> / <a> Show
                                                     </a></td>
 
                                             </tr>
 
-                                            <tr>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button class="btn btn-secondary " type="button"
-                                                            id="dropdownMenuButton" data-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false">
-                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                                        </button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <li> <a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-file-word-o"
-                                                                        aria-hidden="true"></i>Update Draft</a></li>
-                                                            <li><a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-external-link"
-                                                                        aria-hidden="true"></i>Send link to owner</a>
-                                                            </li>
-                                                            <li> <a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-external-link"
-                                                                        aria-hidden="true"></i>Send link to tenant</a>
-                                                            </li>
-                                                            <li> <a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-id-card-o"
-                                                                        aria-hidden="true"></i>Agreement details</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-thumbs-up"
-                                                                        aria-hidden="true"></i>Change biometric
-                                                                    responsibility</a></li>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-1">1897(ASP_005_1897)</p>
-                                                    <a>14523641523645</a>
-                                                    <p class="mb-1 mt-2">Pass@123</p>
-                                                    <a>View Details</a>
-                                                </td>
-                                                <td>PROPERTY ADDRESS 01</td>
-                                                <td>Whole Agreement without Digital Renting appointment</td>
-                                                <td>Whole Agreement without Digital Renting appointment</td>
-                                                <td>Book/View Appointment</td>
-                                                <td><a>Agreement Preparation</a></td>
-                                                <td><a data-toggle="modal" data-target="#digitalRentingServices"> Add
-                                                    </a> / <a> Show
-                                                    </a></td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <button class="btn btn-secondary " type="button"
-                                                            id="dropdownMenuButton" data-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false">
-                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                                        </button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <li> <a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-file-word-o"
-                                                                        aria-hidden="true"></i>Update Draft</a></li>
-                                                            <li><a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-external-link"
-                                                                        aria-hidden="true"></i>Send link to owner</a>
-                                                            </li>
-                                                            <li> <a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-external-link"
-                                                                        aria-hidden="true"></i>Send link to tenant</a>
-                                                            </li>
-                                                            <li> <a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-id-card-o"
-                                                                        aria-hidden="true"></i>Agreement details</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item d-flex align-items-center"
-                                                                    href="#">
-                                                                    <i class="fa fa-thumbs-up"
-                                                                        aria-hidden="true"></i>Change biometric
-                                                                    responsibility</a></li>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-1">1897(ASP_005_1897)</p>
-                                                    <a>14523641523645</a>
-                                                    <p class="mb-1 mt-2">Pass@123</p>
-                                                    <a>View Details</a>
-                                                </td>
-                                                <td>PROPERTY ADDRESS 02</td>
-                                                <td>Whole Agreement without Digital Renting appointment</td>
-                                                <td>Whole Agreement without Digital Renting appointment</td>
-                                                <td>Book/View Appointment</td>
-                                                <td><a>Agreement Preparation</a></td>
-                                                <td><a data-toggle="modal" data-target="#digitalRentingServices"> Add
-                                                    </a> / <a> Show
-                                                    </a></td>
-
-                                            </tr>
+                                           
                                         </tbody>
                                     </table>
                                 </div>
@@ -896,13 +1003,18 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" charset="utf8"
         src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
 
     <script>
-
+        $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
         $(document).ready(function () {
+             
+
             $('#sidebar-btn').on('click', function () {
                 $('#mainSidenav').toggleClass('visible');
                 $('#main-content').toggleClass('visible--inout');
@@ -955,6 +1067,7 @@
                     $('#fixedRentSec').hide()
                 }
             });
+            
 
             
 
