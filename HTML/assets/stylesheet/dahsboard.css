@@ -348,6 +348,7 @@ body{
 .service--table.table-responsive table {
     width: 100%;
 }
+
 .digital--renting--services--modal .total--charges{
     margin: 20px 50px;
 }
@@ -362,6 +363,7 @@ body{
     font-size: 15px;
     height: 45px;
 }
+#doorstepAppointmentDetails,
 #govChargesModal{ 
     display: none;
 }
@@ -384,6 +386,7 @@ body{
     border-bottom: 1px solid #f1f1f1;
     padding-bottom: 20px; 
 }
+.doorstep--app--wrapper .input-group-addon,
 .gov--charges--details--wrapper .input-group-addon{ 
     border: 1px solid #c1c1c1; 
     border-top-left-radius: 15px;
@@ -394,6 +397,7 @@ body{
     border-radius: 15px;
     height: 38px;
 }
+.doorstep--app--wrapper .form-control,
 .gov--charges--details--wrapper .form-control{
     font-size: 15px;
     border: 1px solid #c1c1c1;
@@ -402,10 +406,12 @@ body{
     height: 38px !important;
     border-left: none;
 }
+.doorstep--app--wrapper .form-control:focus,
 .gov--charges--details--wrapper .form-control:focus{
     outline: none;
     box-shadow: 0 0 5px #ddd;
 }
+.doorstep--app--wrapper .calculate--btn,
 .gov--charges--details--wrapper .calculate--btn{
     width: 50%;
     border-radius: 20px;
@@ -417,6 +423,10 @@ body{
 }
 .gov--charges--details--wrapper .varying--rent--sec .rent--calculation .table tbody tr:first-child th{
     border-top: none;
+}
+
+.doorstep--app--wrapper{
+    margin: 15px 20px;
 }
 
 /*------------------ Digital Renting Services Modal (End here) ------------------*/
