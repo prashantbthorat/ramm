@@ -9,6 +9,17 @@ body{
     width: 50%;
     margin-top: 5px;
 }
+.dashboard--wrapper .dashboard--header .navbar-toggle {
+    background-color: #f1605d;
+}
+.dashboard--wrapper .dashboard--header .navbar .navbar-collapse.collapse.in { 
+    box-shadow: 0 0 5px #ddd;
+}
+ 
+.dashboard--wrapper .dashboard--header .navbar-toggle .icon-bar{
+    background-color: #fff;
+    width: 16px;
+}
 .dashboard--header .navbar   {
     box-shadow: 0 0 5px #ddd;
 }
@@ -165,7 +176,9 @@ body{
 .dashboard--wrapper .main-content .content--middle--wrap{ 
     margin-top: -110px;
     border-radius: 10px;
-    /* box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);  */
+    height: calc(100vh - 149px);
+    overflow: auto;
+    padding: 0 0 0 15px; 
 } 
 .dashboard--wrapper .main-content .table-responsive tbody tr{
     background-color: #f2f4fa;
@@ -258,9 +271,9 @@ body{
     padding: 9px;
     border-top: 1px solid #ddd;
 }
-.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.one{width: 40%;}
-.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.two{width: 30%;}
-.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.three{width: 30%;}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.one{width: 130px;}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.two{width: 100px;}
+.dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .td.three{width: 100px;}
 .dashboard--wrapper .agreement--process--table .table tbody tr td .party--details .table--header.collapsed .td.three .fa{   
     transform: rotate( 0deg );
 }
@@ -376,7 +389,7 @@ body{
 }
 
 .gov--charges--details--wrapper{
-    margin: 15px 20px;
+    padding: 15px 20px;
 }
  
 .gov--charges--details--wrapper .form-group{
@@ -429,7 +442,53 @@ body{
     margin: 15px 20px;
 }
 
+
 /*------------------ Digital Renting Services Modal (End here) ------------------*/
 
 
 /*------------------ Middle section css (end here)  ------------------*/
+
+@media only screen and (max-width: 599px) {
+    .dashboard--wrapper .main-content .table-responsive{
+        border: none;
+    }
+    .dashboard--wrapper .main-content .table-responsive tbody tr td{
+        font-size: 12px;
+    }
+    .dashboard--wrapper .table-responsive thead tr th{
+        font-size: 11px;
+    }
+    .dashboard--middle--sec .main-content .content--upper--wrap h2{
+        font-size: 16px; 
+        margin: 0;
+    }
+    .dashboard--wrapper .main-content .content--middle--wrap{
+        margin-top: -130px;
+    }
+    .dashboard--wrapper .dataTables_wrapper .dataTables_filter input{
+        width: 230px;
+    }
+    .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter{
+        text-align: left !important;
+    }
+    .dashboard--middle--sec .sidenav{
+        width: 0;
+        position: absolute;
+        top: -4px;
+    }
+    .dashboard--middle--sec .main-content{
+        margin-left: 0 !important;
+    }
+    .digital--renting--services--modal .total--charges .input-group-addon {
+        width: 52%;
+    }
+    .dashboard--middle--sec .collapse--btn{
+        left: 140px;
+    }
+    
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
+@media screen and (orientation:landscape) and (max-width: 850px){}

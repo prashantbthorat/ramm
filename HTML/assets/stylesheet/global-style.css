@@ -232,6 +232,10 @@
     background: #f15d5b !important;
     border-color: #f2615e;
 }
+.btn--primary:focus,
+.btn--primary:hover{
+    border-color: #f15e5c !important;
+}
  .modal--header{
     background: linear-gradient(87deg, #f15c5b 0, #f49a80 100%) !important;
     color: #fff;
